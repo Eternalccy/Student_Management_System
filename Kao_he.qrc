@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="Kao_he">
+    <file>qian.png</file>
+    <file>shen.png</file>
+  </qresource>
+</RCC>

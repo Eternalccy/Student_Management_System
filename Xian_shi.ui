@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Xian_shi</class>
+ <widget class="QWidget" name="Xian_shi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Xian_shi</string>
+  </property>
+  <widget class="QListView" name="xian_cheng">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>120</y>
+     <width>621</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Kao_he/shen.png);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>80</y>
+     <width>631</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>幼圆</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>成    绩    显    示</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>560</y>
+     <width>391</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>幼圆</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>退 出 之 前 别 忘 了 导 出 保 存 嗷 🌺~</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>幼圆</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>成    绩    显    示</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ru_ru_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>560</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>幼圆</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Kao_he/shen.png);</string>
+   </property>
+   <property name="text">
+    <string>导入MySQL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chu_chu_2">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>560</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>幼圆</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/Kao_he/shen.png);</string>
+   </property>
+   <property name="text">
+    <string>导出MySQL</string>
+   </property>
+  </widget>
+  <zorder>label_13</zorder>
+  <zorder>xian_cheng</zorder>
+  <zorder>label_11</zorder>
+  <zorder>label_12</zorder>
+  <zorder>ru_ru_2</zorder>
+  <zorder>chu_chu_2</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ru_ru_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Xian_shi</receiver>
+   <slot>dao_ru_2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>580</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>141</x>
+     <y>-9</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chu_chu_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Xian_shi</receiver>
+   <slot>dao_chu_2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>682</x>
+     <y>581</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>770</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>dao_ru()</slot>
+  <slot>dao_chu()</slot>
+  <slot>dao_ru_2()</slot>
+  <slot>dao_chu_2()</slot>
+ </slots>
+</ui>

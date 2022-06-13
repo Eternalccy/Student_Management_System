@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Kao_heClass</class>
+ <widget class="QMainWindow" name="Kao_heClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kao_he</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>561</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>欢 迎 来 到 学 生 成 绩 管 理 系 统 🌻</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="haoyun">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>601</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chou_6">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>160</y>
+      <width>111</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Kao_he/shen.png);</string>
+    </property>
+    <property name="text">
+     <string>显  示 </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chou_10">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>320</y>
+      <width>111</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Kao_he/shen.png);</string>
+    </property>
+    <property name="text">
+     <string>查  找 </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chou_11">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>240</y>
+      <width>111</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Kao_he/shen.png);</string>
+    </property>
+    <property name="text">
+     <string>删  改 </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chou_12">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>200</y>
+      <width>111</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Kao_he/shen.png);</string>
+    </property>
+    <property name="text">
+     <string>排  序 </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chou_13">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>280</y>
+      <width>111</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Kao_he/shen.png);</string>
+    </property>
+    <property name="text">
+     <string>统  计 </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="chou_14">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>120</y>
+      <width>111</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>幼圆</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Kao_he/shen.png);</string>
+    </property>
+    <property name="text">
+     <string>录  入 </string>
+    </property>
+   </widget>
+   <zorder>haoyun</zorder>
+   <zorder>label</zorder>
+   <zorder>chou_6</zorder>
+   <zorder>chou_10</zorder>
+   <zorder>chou_11</zorder>
+   <zorder>chou_12</zorder>
+   <zorder>chou_13</zorder>
+   <zorder>chou_14</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Kao_he.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>chou_14</sender>
+   <signal>clicked()</signal>
+   <receiver>Kao_heClass</receiver>
+   <slot>lu_lu2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>378</x>
+     <y>116</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>490</x>
+     <y>-4</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chou_6</sender>
+   <signal>clicked()</signal>
+   <receiver>Kao_heClass</receiver>
+   <slot>xian_xian2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>353</x>
+     <y>145</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>603</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chou_12</sender>
+   <signal>clicked()</signal>
+   <receiver>Kao_heClass</receiver>
+   <slot>pai_pai2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>392</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>606</x>
+     <y>241</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chou_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Kao_heClass</receiver>
+   <slot>gai_gai2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>354</x>
+     <y>237</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>605</x>
+     <y>284</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chou_13</sender>
+   <signal>clicked()</signal>
+   <receiver>Kao_heClass</receiver>
+   <slot>tong_tong2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>338</x>
+     <y>275</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>604</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>chou_10</sender>
+   <signal>clicked()</signal>
+   <receiver>Kao_heClass</receiver>
+   <slot>cha_cha2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>377</x>
+     <y>310</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>606</x>
+     <y>382</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>lu_lu()</slot>
+  <slot>xian_xian()</slot>
+  <slot>pai_pai()</slot>
+  <slot>tong_tong()</slot>
+  <slot>gai_gai()</slot>
+  <slot>cha_cha()</slot>
+  <slot>zeng_zeng()</slot>
+  <slot>lu_lu2()</slot>
+  <slot>xian_xian2()</slot>
+  <slot>pai_pai2()</slot>
+  <slot>tong_tong2()</slot>
+  <slot>gai_gai2()</slot>
+  <slot>cha_cha2()</slot>
+  <slot>zeng_zeng2()</slot>
+ </slots>
+</ui>
